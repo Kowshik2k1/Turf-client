@@ -9,7 +9,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ManagerDashboard from "./pages/ManagerDashboard";
 import AddTurf from "./pages/AddTurf";
 import TurfDetails from "./pages/TurfDetails";
-import BookingPage from "./pages/BookingPage";
+import Booking from "./pages/BookingPage";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
 import Layout from "./components/Layout";
@@ -67,10 +67,18 @@ const App = () => {
           }
         />
         <Route
-          path="/booking"
+          path="/bookings"
           element={
             <PrivateRoute>
-              <BookingPage />
+              <BookingHistory />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/booking/:turfId"
+          element={
+            <PrivateRoute>
+              <Booking />
             </PrivateRoute>
           }
         />
@@ -78,7 +86,6 @@ const App = () => {
         <Route path="/search" element={<Search />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
