@@ -1,0 +1,102 @@
+@forward "./themes/variables";
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --header-bg: #ffffff;
+  --footer-bg: #0a0a23;
+  --card-bg: #f9f9f9;
+  --primary: #007bff;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #0a0a23;
+  --text-color: #f1f1f1;
+  --header-bg: #13132a;
+  --footer-bg: #000000;
+  --card-bg: #1f1f3b;
+  --primary: #00d1b2;
+  --button-bg: #00d1b2;
+  --button-text: #000000;
+}
+
+body.light {
+  background-color: #f8f9fa;
+  color: $text-dark;
+
+  .navbar {
+    background-color: white;
+    color: $text-dark;
+
+    a {
+      color: $text-dark;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #f3f3f3;
+    color: $text-dark;
+  }
+
+  .btn-primary {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+body.dark {
+  background-color: #0d1117;
+  color: $text-light;
+
+  .navbar {
+    background-color: #161b22;
+    color: $text-light;
+
+    a {
+      color: $text-light;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #0d1117;
+    color: $text-light;
+  }
+
+  .btn-primary {
+    background-color: $secondary;
+    color: $dark;
+  }
+}
+
+body.dark .hero {
+  background: linear-gradient(135deg, #222, #111);
+  color: #eee;
+
+  .search-form {
+    input {
+      background-color: #333;
+      color: #eee;
+    }
+
+    button {
+      background-color: #eee;
+      color: #222;
+    }
+  }
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

@@ -1,0 +1,92 @@
+.hero {
+  background: linear-gradient(135deg, #1e90ff, #00b96b);
+  padding: 6rem 1rem 4rem;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+  }
+}
+
+.features {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+
+  .feature-item {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #fff;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    }
+
+    h5 {
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  }
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 4rem 0;
+
+  .testimonial {
+    padding: 1.5rem;
+    background: #f1f1f1;
+    border-left: 4px solid #198754;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    p {
+      font-style: italic;
+    }
+
+    .author {
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  }
+}
+
+.cta-section {
+  background: linear-gradient(45deg, #198754, #28a745);
+  padding: 3rem 0;
+  color: #fff;
+  text-align: center;
+
+  .btn-cta {
+    margin-top: 1.5rem;
+    background: #fff;
+    color: #198754;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #e6e6e6;
+    }
+  }
+}
+

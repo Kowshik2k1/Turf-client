@@ -1,0 +1,65 @@
+@use '../mixins.scss';
+
+.navbar {
+  background-color: var(--bg);
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0.75rem 0;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .btn {
+        background-color: var(--primary);
+  color: #333;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: darken(blue, 10%);
+  }
+
+      &.btn-light {
+        background-color: transparent;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+      }
+    }
+
+    .username {
+      font-weight: 500;
+      color: var(--text);
+    }
+  }
+}

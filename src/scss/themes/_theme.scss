@@ -1,0 +1,144 @@
+/* theme.scss */
+
+/* Root resets */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== LIGHT THEME ========== */
+body.light {
+  background-color: #f9fafb;
+  color: #212529;
+}
+
+body.light .navbar,
+body.light .footer {
+  background-color: #ffffff;
+  color: #212529;
+  border-bottom: 1px solid #dee2e6;
+}
+
+body.light .card,
+body.light .feature,
+body.light .testimonial,
+body.light .cta,
+body.light .review-card,
+body.light .search-result {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+body.light .form-control {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+
+body.light .btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+body.light .btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+/* ========== DARK THEME ========== */
+body.dark {
+  background-color: #181a1b;
+  color: #f8f9fa;
+}
+
+body.dark .navbar,
+body.dark .footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  border-bottom: 1px solid #2c3034;
+}
+
+body.dark .card,
+body.dark .feature,
+body.dark .testimonial,
+body.dark .cta,
+body.dark .review-card,
+body.dark .search-result {
+  background-color: #26292c;
+  color: #f8f9fa;
+  border: 1px solid #343a40;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .form-control {
+  background-color: #2b2f32;
+  color: #f8f9fa;
+  border: 1px solid #444c54;
+}
+
+body.dark .btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+body.dark .btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== Features, CTA, Testimonials, Review Cards ===== */
+.feature,
+.testimonial,
+.cta,
+.review-card,
+.search-result {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== Not Found ===== */
+.not-found {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+body.light .not-found {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+body.dark .not-found {
+  background-color: #1f2327;
+  color: #f8f9fa;
+}
+
+/* ===== ThemeToggle button ===== */
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
