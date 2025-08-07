@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
 import Layout from "./components/Layout";
 import HowItWorks from "./pages/HowItWorks";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -83,6 +84,7 @@ const App = () => {
             </PrivateRoute>
           }
         />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/turfs/:id" element={<TurfDetails />} />
         <Route path="/search" element={<Search />} />
         <Route path="/login" element={<Login />} />
