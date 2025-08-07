@@ -55,6 +55,12 @@
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
 
+    &:last-child {
+      @media(min-width: 992px){
+        margin-left: 40px;
+      }
+    }
+
     p {
       font-style: italic;
     }
@@ -90,3 +96,10 @@
   }
 }
 
+.dark {
+  .cta-section {
+    h2 {
+      color: #fff;
+    }
+  }
+}

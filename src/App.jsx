@@ -13,6 +13,7 @@ import Booking from "./pages/BookingPage";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
 import Layout from "./components/Layout";
+import HowItWorks from "./pages/HowItWorks";
 
 const App = () => {
   return (
@@ -86,6 +87,7 @@ const App = () => {
         <Route path="/search" element={<Search />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>

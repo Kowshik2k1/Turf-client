@@ -67,7 +67,8 @@ body.dark .feature,
 body.dark .testimonial,
 body.dark .cta,
 body.dark .review-card,
-body.dark .search-result {
+body.dark .search-result,
+body.dark .testimonial .author {
   background-color: #26292c;
   color: #f8f9fa;
   border: 1px solid #343a40;
@@ -78,6 +79,16 @@ body.dark .form-control {
   background-color: #2b2f32;
   color: #f8f9fa;
   border: 1px solid #444c54;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.dark {
+  h1,h2,h3,h4,h5,h6 {
+    color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 body.dark .btn-primary {

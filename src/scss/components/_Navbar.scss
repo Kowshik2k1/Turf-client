@@ -1,18 +1,54 @@
-@use '../mixins.scss';
+@use "../mixins.scss";
 
 .navbar {
-  background-color: var(--bg);
+  background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   padding: 0.75rem 0;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 
   .logo {
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--primary);
+    color: #333;
     text-decoration: none;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .wrap {
+    .btn {
+      border-radius: 20px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255 / 0.5);
+      padding: 5px 10px;
+    }
+
+    .text-white {
+      font-weight: bold;
+      margin: 0 20px;
+    }
+  }
+
+  .lang-btn.btn {
+    color: #fff;
+
+    &:hover {
+      color: #333;
+      background: #fff;
+    }
   }
 
   .navbar-links {
@@ -37,18 +73,18 @@
     align-items: center;
 
     .btn {
-        background-color: var(--primary);
-  color: #333;
-  padding: 0.5rem 1.25rem;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s;
+      background-color: var(--primary);
+      color: #333;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s;
 
-  &:hover {
-    background-color: darken(blue, 10%);
-  }
+      &:hover {
+        background-color: darken(blue, 10%);
+      }
 
       &.btn-light {
         background-color: transparent;
@@ -60,6 +96,43 @@
     .username {
       font-weight: 500;
       color: var(--text);
+    }
+  }
+}
+
+.light {
+  .navbar-brand {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: #333;
+    font-weight: 700;
+  }
+
+  .lang-btn.btn {
+    color: #333;
+
+    &:hover {
+      color: #fff;
+      background-color: #3766dd;
+    }
+  }
+
+  .wrap {
+    .btn {
+      color: #332;
+      border-radius: 20px;
+      font-weight: 600;
+      border: 1px solid rgba(0, 0, 0 / 0.5);
+      padding: 5px 10px;
+    }
+
+    .text-white {
+      color: #333 !important;
+      font-weight: bold;
+      margin: 0 20px;
     }
   }
 }

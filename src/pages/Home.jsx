@@ -48,14 +48,14 @@ const Home = () => {
         <div className="container">
           <h2 className="text-center mb-5">What Players Say</h2>
           <div className="row justify-content-center">
-            <div className="col-md-6 testimonial">
+            <div className="col-md-5 testimonial">
               <p>
                 "Booking a turf was never this easy! TurfBook has streamlined my
                 weekend matches."
               </p>
               <div className="author">— Rahul M.</div>
             </div>
-            <div className="col-md-6 testimonial">
+            <div className="col-md-5 testimonial">
               <p>
                 "I found a turf just 2km from my place. The rating system really
                 helps."

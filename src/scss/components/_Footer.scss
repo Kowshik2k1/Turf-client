@@ -29,7 +29,7 @@
 
   h5 {
     font-weight: 600;
-    color: #f0f6fc;
+    color: #fff !important;
     margin-bottom: 1rem;
   }
 
@@ -53,10 +53,30 @@
   }
 
   hr {
-    border-color: #30363d;
+    border-color: #fff;
   }
 
   p {
     font-size: 0.875rem;
+  }
+}
+
+
+.light {
+  .custom-footer {
+    background: rgba(241, 245, 249, 0.3);
+    color: #333;
+
+    h5 {
+      color: #333 !important;
+    }
+
+    hr {
+      border-color: #30363d;
+    }
+
+    p, h5, a {
+      color: #333;
+    }
   }
 }

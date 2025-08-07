@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <hr className="my-4" />
-        <p className="text-center mb-0">© 2024 TurfBook. All rights reserved.</p>
+        <p className="text-center mb-0">© 2025 TurfBook. All rights reserved.</p>
       </div>
     </footer>
   );
